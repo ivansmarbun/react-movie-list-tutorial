@@ -1,12 +1,51 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Movie List Tutorial
 
-Currently, two official plugins are available:
+This project is a movie list web application built with React and Vite. It allows users to browse popular movies and search for movies using The Movie Database (TMDB) API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
+This project is based on the YouTube tutorial by Tech With Tim:
+[React Movie List App - Full Tutorial](https://www.youtube.com/watch?v=G6D9cBaLViA&t=488s&ab_channel=TechWithTim)
 
-## Expanding the ESLint configuration
+The code has been adapted for learning purposes and includes Docker support for easy deployment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+- Browse popular movies
+- Search for movies
+- Add movies to favorites
+- Responsive design
+
+## Getting Started
+
+### Prerequisites
+- Node.js and npm (for local development)
+- Docker and Docker Compose (for containerized setup)
+
+### Local Development
+1. Clone the repository
+2. Copy `.env.example` to `.env` and add your TMDB API key
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Docker Setup
+1. Copy `.env.example` to `.env` and add your TMDB API key
+2. Build and run with Docker Compose:
+   ```bash
+   docker compose up --build
+   ```
+3. Visit [http://localhost:8080](http://localhost:8080)
+
+## Environment Variables
+- `VITE_TMDB_API_KEY`: Your TMDB API key (required)
+
+## License
+This project is for educational purposes.
+
+---
+Inspired by Tech With Tim's YouTube tutorial.
