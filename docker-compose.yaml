@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  react-movie-list:
+    build:
+      context: .
+    env_file:
+      - .env
+    ports:
+      - "8080:80"
